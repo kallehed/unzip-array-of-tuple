@@ -8,6 +8,7 @@ authors = ["Karl Hedberg"]
 keywords = ["array", "utility", "unzip", "tuple", "lightweight"]
 catagories = ["data-structures", "rust-patterns"]
 readme = "README.md"
+homepage = "https://github.com/kallehed/unzip-array-of-tuple"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
