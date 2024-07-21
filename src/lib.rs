@@ -1,5 +1,17 @@
 /// Unzips an array of tuples like [(i32, i64); N] into two arrays -> ([i32; N], [i64; N])
-/// Useful 
+/// Useful
+///
+/// # Examples
+/// ```
+/// # use unzip_array_of_tuple::unzip_array_of_tuple;
+/// #
+/// let cats = [("Oliver", 3), ("Kitty", 7), ("Rosie", 1)];
+///
+/// let (cat_names, cat_ages) = unzip_array_of_tuple(cats);
+///
+/// assert_eq!(cat_names, ["Oliver", "Kitty", "Rosie"]);
+/// assert_eq!(cat_ages, [3, 7, 1]);
+/// ```
 pub fn unzip_array_of_tuple<T1, T2, const N: usize>(arr: [(T1,T2); N]) -> ([T1; N], [T2; N])
 {
     use std::mem::{MaybeUninit, self};
